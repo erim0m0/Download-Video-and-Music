@@ -33,7 +33,7 @@ class Scraper:
         links = content.find_all('a', href=re.compile('.mp[4 3]'))
         links = [link.get('href') for link in links] if links else None
         self.music_or_video = 'music' if links[0].endswith('3') else 'video'
-        return links
+        return list(set(links))
 
     def get_qualities(self):
         get_links = self.get_all_links()
@@ -92,7 +92,3 @@ class Main:
         print('\nFinished Dowloading :)')
 
 
-a = Main(
-    url='https://www.namasha.com/v/QyrhIutm',
-    quality=144)
-a.download
