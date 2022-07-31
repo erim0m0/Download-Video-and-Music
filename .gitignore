@@ -2,7 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
 ### scrap_venv ###
-scrap_venv/
+scrap_virtual/
+
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
