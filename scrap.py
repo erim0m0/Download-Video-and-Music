@@ -19,6 +19,9 @@ class QualityError(DownloderExceptions):
 
 
 class Scraper:
+    """
+    In this class, we get downloading_link and available quality.
+    """
     def __init__(self, url, quality):
         self.url = url
         self.quality = str(quality)
@@ -56,6 +59,9 @@ class Scraper:
 
 
 class Main:
+    """
+    get desired url and quality, then download a mp3 or mp4 file.
+    """
     def __init__(self, url, quality):
         self.url = url
         self.quality = quality
@@ -87,6 +93,6 @@ class Main:
 
 
 a = Main(
-    url='https://radiojavanhd.com/112498/%d8%af%d8%a7%d9%86%d9%84%d9%88%d8%af-%d8%a2%d9%87%d9%86%da%af-%d9%85%db%8c%d8%ab%d9%85-%d8%a7%d8%a8%d8%b1%d8%a7%d9%87%db%8c%d9%85%db%8c-%d8%a8%d9%87-%d9%86%d8%a7%d9%85-%d9%85%db%8c%d8%b2%d9%86%d9%87/',
-    quality=128)
+    url='https://www.namasha.com/v/QyrhIutm',
+    quality=144)
 a.download
