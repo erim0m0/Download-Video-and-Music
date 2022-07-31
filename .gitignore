@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
+### scrap_venv ###
+scrap_venv/
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -131,7 +134,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-scrap_venv/
+
 
 # Spyder project settings
 .spyderproject
