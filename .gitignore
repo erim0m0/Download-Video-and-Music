@@ -4,7 +4,7 @@
 ### scrap_venv ###
 scrap_virtual/
 
-*.idea/
+.idea
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
